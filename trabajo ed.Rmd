@@ -9,6 +9,48 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## __Título__: Breve, lo principal es hacer alusión a las principales variables a relacionar (0,5 puntos)
+
+### Introducción (2 puntos)
+
+Definición de la problemática a abordar, su relevancia y principales conceptos (500 palabras).
+
+En este apartado es importante considerar:
+- Relevancia del tema de investigación.
+
+- Problematización: señalar problema de investigación y principales antecedentes
+
+- Precisar los conceptos centrales a investigar: Ejemplo “vamos a analizar la participación informal, entendiendo por ello la frecuencia de participación en actividades como marchas, boycotts y en redes sociales” [cita que apoye la definición].
+
+- Mencionar el principal objetivo del trabajo y las hipótesis de investigación en el párrafo final de esta sección (ej: se espera que el nivel educacional sea mayor en zonas urbanas en relación a zonas rurales). Mencionar al menos tres hipótesis.
+
+### Variables (2 puntos)
+
+Esta sección también incluye una tabla de descriptivos básicos, y un detalle de la operacionalización y medición de las variables.
+
+Nota: Atención sobre recodificación de variables
+
+Es importante que las variables sean recodificadas en el sentido del atributo que se está midiendo de menos a más, es decir, que el mayor valor exprese la mayor presencia del atributo.
+
+Ejemplo 1: si lo que se está midiendo es apoyo al aborto libre en una escala donde 5 es totalmente en desacuerdo y 1 totalmente de acuerdo, se deben recodificar los valores para que un mayor puntaje exprese mayor apoyo al aborto libre. En concreto: 1=5, 2=4, 4=2, 5=1.
+
+Mencionar al final de esta sección los métodos estadísticos a utilizar para el contraste de hipótesis.
+
+### Análisis (6 puntos)
+
+3.1 Análisis descriptivo: tablas o gráficos comentados, univariados y bivariados según sea más pertinente. Para esto considere medidas de tendencia central, dispersión y frecuencias, siempre considerando el nivel de medición de sus variables. En los casos que sea atingente, incluya los intervalos de confianza al 95 %. Esta sección debe incluir la reproducción de alguno de los gráficos o tablas de reportes de CASEN / EBS.
+
+3.2 Análisis estadístico bivariado: considerar la estimación de coeficientes de correlación y también medidas de asociación para variables categóricas. Esta parte del análisis se relaciona directamente con las hipótesis planteadas. Para esto realizar pruebas de hipótesis estadísticas, estadísticos de tamaño del efecto y tablas de contingencia / cruzadas, siempre considerando el nivel de medición de sus variables.
+
+Al final de esta sección también se realiza la discusión de resultados en relación a las hipótesis planteadas
+
+### Conclusiones (2 puntos)
+
+Resumen general, limitaciones y sugerencias para futuros análisis
+
+### __Bibliografía__ (1 punto)
+
+
 ```{r librerias, echo=FALSE, message=FALSE, warning=FALSE}
 
 pacman::p_load(tidyverse, # Manipulacion datos
@@ -30,8 +72,7 @@ casen_2022 <- read_stata("C:\\Users\\victo\\Downloads\\Base de datos Casen 2022 
 dplyr::select(casen_2022, m0_sexo, m0_edad, m13)
 ```
 
-
+variables a utilizar:
 modulo e educacion
 e6a_no_asiste
-
 y28_2b1
