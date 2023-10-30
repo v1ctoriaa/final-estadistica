@@ -1,0 +1,37 @@
+---
+title: "trabajo final"
+author: "Victoria Arias"
+date: "2023-10-24"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r librerias, echo=FALSE, message=FALSE, warning=FALSE}
+
+pacman::p_load(tidyverse, # Manipulacion datos
+               sjPlot, #tablas
+               confintr, # IC
+               gginference, # Visualizacion 
+               rempsyc, # Reporte
+               broom) # Varios
+
+options(scipen = 999) 
+rm(list = ls()) 
+```
+
+```{r casen2022, echo=FALSE}
+
+library(haven)
+casen_2022 <- read_stata("C:\\Users\\victo\\Downloads\\Base de datos Casen 2022 STATA.dta.zip")
+
+dplyr::select(casen_2022, m0_sexo, m0_edad, m13)
+```
+
+
+modulo e educacion
+e6a_no_asiste
+
+y28_2b1
